@@ -1,0 +1,87 @@
+* {
+  list-style: none;
+  border-radius: 7px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  display: flex;
+  background-color: chocolate;
+}
+#wrapper {
+  width: 1000px;
+  height: 500px;
+  margin-top: 3rem;
+  background: linear-gradient(45deg, gold, red);
+  /* background-color: gold; */
+}
+#Card_Deck {
+  gap: 1.5rem;
+  margin-top: 2rem;
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: repeat(6, 1fr);
+}
+.Card {
+  width: 5rem;
+  height: 5rem;
+  font-size: 40px;
+  display: flex;
+  position: relative;
+  background-color: brown;
+}
+#Menu {
+  width: 100%;
+  position: relative;
+}
+#Menu button {
+  left: 25%;
+  position: relative;
+}
+#Menu h1 {
+  display: flex;
+  font-size: 4rem;
+  position: relative;
+}
+.Btn {
+  font-size: 2rem;
+  padding: 0.5rem;
+  width: fit-content;
+  height: fit-content;
+  margin: 1rem;
+  background-color: aquamarine;
+}
+.Btn:hover {
+  background-color: grey;
+}
+#Multi {
+  display: none;
+  position: relative;
+}
+#CurnPlayer {
+  left: 22.5rem;
+  font-size: 2rem;
+  padding: 0.5rem;
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  background-color: aquamarine;
+}
+#Player1Score,
+#Player2Score {
+  font-size: 2rem;
+  padding: 0.5rem;
+  width: fit-content;
+  height: fit-content;
+  background-color: aquamarine;
+}
+#Player1Score {
+  left: 1rem;
+  position: absolute;
+}
+#Player2Score {
+  top: 0%;
+  left: 80%;
+  position: absolute;
+}

@@ -1,0 +1,61 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: beige;
+}
+#wrpper {
+  margin: auto;
+  top: 5rem;
+  width: 1500px;
+  position: relative;
+}
+#gallery {
+  width: 100%;
+  height: 800px;
+}
+#left {
+  width: 10%;
+  float: left;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(img/Arrows/Left-Arrow.png);
+}
+#right {
+  width: 10%;
+  float: right;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(img/Arrows/Right-Arrow.png);
+}
+#left:hover,
+#right:hover {
+  background-color: lightgray;
+}
+#carousel {
+  width: 80%;
+  float: left;
+  height: 100%;
+  position: relative;
+}
+img {
+  width: 100%;
+  height: 100%;
+  transition: 250ms;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.radial_indicator {
+  border: 0;
+  width: 25px;
+  height: 25px;
+  margin: 0 12px;
+  border: 1px solid black;
+  border-radius: 50%;
+}

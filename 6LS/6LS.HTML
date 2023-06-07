@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>6LS</title>
+    <style>
+      body {
+        background-color: grey;
+      }
+      #wrapper {
+        width: 800px;
+        height: 800px;
+        position: relative;
+        background-color: bisque;
+      }
+      #Cube {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+
+        background-color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <div id="a">
+        חיצוני
+        <p id="b">
+          אמצעי
+          <br /><br /><i id="c">פנימי</i>
+        </p>
+      </div>
+      <br />
+      <div id="timer"></div>
+      <br />
+      <button id="stop">Stop</button>
+      <button id="start">Start</button>
+      <br />
+      <div id="wrapper">
+        <div id="Cube"></div>
+      </div>
+      <button onclick="tik()">blink</button>
+      <button onclick="tok()">move</button>
+    </center>
+  </body>
+  <script src="6LS.JS"></script>
+</html>

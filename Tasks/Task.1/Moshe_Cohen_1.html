@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moshe_Cohen_1</title>
+    <style>
+      body {
+        background-color: blanchedalmond;
+      }
+      .Square {
+        width: 450px;
+        height: 300px;
+        color: black;
+        border: 1px solid white;
+        background-color: lightblue;
+      }
+      #Wrapper {
+        width: 60%;
+        display: flex;
+        justify-content: space-evenly;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <div id="Wrapper">
+        <div>
+          <div class="Square">
+            <p style="font-size: 40px">Table :</p>
+            <p style="font-size: 30px" id="a"></p>
+          </div>
+          <button onclick="TurnTable()">גלה לי את ערכי האובייקט</button>
+        </div>
+
+        <div>
+          <div class="Square">
+            <p style="font-size: 40px">Sport :</p>
+            <p style="font-size: 30px" id="b"></p>
+          </div>
+          <button onclick="ShowSport()">גלה לי את ערכי המערך</button>
+        </div>
+      </div>
+    </center>
+  </body>
+  <script src="Moshe_Cohen_1.JS"></script>
+</html>
