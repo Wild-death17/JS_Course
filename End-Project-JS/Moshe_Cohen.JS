@@ -44,7 +44,7 @@ function createCards() {
   GScreen.innerHTML = strCards;
   for (let i = 0; i < cards.length; i++) {
     cards[i].addEventListener("keyup", function () {
-      ClickedCard(this, i);
+      if (this.innerHTML === "?") ClickedCard(this, i);
     });
   }
 }
@@ -83,29 +83,6 @@ function ClickedCard(Element, Idx) {
     }
   }
 }
-//let PressedCards = ["", ""];
-// function ClickedCard(Element, Idx) {
-//   if (!PressedCards[1] && PressedCards[0] !== Element) {
-//     Element.innerHTML = `${Letters[Idx]}`;
-//     if (!PressedCards[0]) return (PressedCards[0] = Element);
-//     PressedCards[1] = Element;
-//     if (PressedCards[0].innerHTML === PressedCards[1].innerHTML) {
-//       CardsMatched++;
-//       if (Multiplayer) ScoreCount();
-//       if (CardsMatched == 12) EndGame();
-//     } else {
-//       setTimeout(() => {
-//         if (Multiplayer) ChangePlayer();
-//         PressedCards[0].innerHTML = "?";
-//         PressedCards[1].innerHTML = "?";
-//       }, 1000);
-//     }
-//     setTimeout(() => {
-//       PressedCards[0] = "";
-//       PressedCards[1] = "";
-//     }, 1000);
-//   }
-// }
 //--End-Game-Stuff--\/--
 function EndGame() {
   Menu.style.display = "block";

@@ -18,21 +18,23 @@ body {
 }
 #Card_Deck {
   gap: 1.5rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: grid;
   justify-content: space-evenly;
   grid-template-columns: repeat(6, 1fr);
 }
 .Card {
   width: 5rem;
-  height: 5rem;
+  height: 6rem;
   font-size: 40px;
   display: flex;
   position: relative;
-  background-color: brown;
+  background-color: whitesmoke;
+  border: 1px black solid;
 }
 #Menu {
   width: 100%;
+  top: 4rem;
   position: relative;
 }
 #Menu button {
